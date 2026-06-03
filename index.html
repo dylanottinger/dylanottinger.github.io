@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dylan Ottinger</title>
+    <meta
+      name="description"
+      content="Dylan Ottinger's personal website."
+    >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="block header-row">
+        <img src="photo.jpg" alt="Dylan Ottinger" class="avatar">
+        <div>
+          <h1>Dylan Ottinger</h1>
+          <p>
+            I like to build things and write about what I learn.
+            <a href="https://github.com/dylanottinger" rel="me">GitHub</a> /
+            <a href="https://x.com/dylanotti" rel="me">X</a> /
+            <a href="https://www.linkedin.com/in/dylan-ottinger/" rel="me">LinkedIn</a> /
+            <a href="mailto:Dylanottinger@berkeley.edu" rel="me">Email</a>
+          </p>
+        </div>
+      </header>
+
+      <section class="block" aria-labelledby="projects">
+        <h2 id="projects">Projects</h2>
+
+        <div class="project">
+          <p><a href="https://github.com/dylanottinger/crm-reliability-engine">crm-reliability-engine</a> — A human-in-the-loop CRM governance layer for AI-extracted GTM data.</p>
+          <p>Instead of letting Gong, HubSpot, or transcript-derived signals blindly overwrite CRM fields, the system turns every suggested change into a confidence-scored mutation proposal. Operators can approve or reject changes in one click, and every decision is logged in an event-sourced audit trail.</p>
+          <p class="why"><span class="why-label">Why it matters:</span> Solves the "garbage in, garbage out" problem in automated CRM syncing, preventing data drift without requiring hours of manual sales rep auditing.</p>
+          <p class="stack">Built with Next.js, SQLite, and an event-sourced audit log.</p>
+          <div class="video-wrap">
+            <iframe src="https://www.loom.com/embed/76f69b98fef54c6eb22b773c393c2e5a"
+              allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="project">
+          <p><a href="https://github.com/dylanottinger/revenue-ops-system">revenue-ops-system</a> — Real-time inbound lead routing infrastructure for GTM teams.</p>
+          <p>AI enrichment adds intent tags and urgency signals, but routing stays deterministic: territory rules, rep capacity, and weighted round-robin logic decide ownership. Failed routes go into an exceptions queue and can be replayed by an operator. Every lifecycle stage writes to an immutable event store.</p>
+          <p class="why"><span class="why-label">Why it matters:</span> Replaces fragile, black-box routing setups with an un-brickable, audit-logged infrastructure ensuring 100% lead compliance and zero dropped revenue.</p>
+          <p class="stack">Built with Next.js, SQLite, deterministic routing logic, and operator-facing observability.</p>
+          <div class="video-wrap">
+            <iframe src="https://www.loom.com/embed/23ccb20bd4374a4d9e3e987c731ff3d9"
+              allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="block" aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <p>Want to talk? <a href="mailto:Dylanottinger@berkeley.edu">Email me</a> or connect on <a href="https://www.linkedin.com/in/dylan-ottinger/">LinkedIn</a>.</p>
+      </section>
+
+      <footer class="block">
+        <p>© 2026 Dylan Ottinger</p>
+      </footer>
+    </main>
+  </body>
+</html>
