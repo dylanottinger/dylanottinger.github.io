@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static server",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["/Users/dylanottinger/Desktop/Website/server.js"],
+      "port": 3000
+    },
+    {
+      "name": "crm-engine",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["/Users/dylanottinger/Desktop/crm-reliability-engine-main/node_modules/next/dist/bin/next", "dev", "/Users/dylanottinger/Desktop/crm-reliability-engine-main", "--port", "3001"],
+      "port": 3001
+    }
+  ]
+}
