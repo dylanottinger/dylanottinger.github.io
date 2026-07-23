@@ -42,26 +42,22 @@
         <h2 id="projects">Projects</h2>
 
         <div class="project">
-          <p><a href="https://github.com/dylanottinger/gtm-mcp-server">gtm-mcp-server</a> — A single MCP server that makes the full GTM stack agent-accessible.</p>
+          <p><a href="https://github.com/dylanottinger/gtm-mcp-server">gtm-mcp-server</a> - A single MCP server that makes the full GTM stack agent-accessible.</p>
           <p>Wires HubSpot, Clay, Apollo, Slack, and email into one Model Context Protocol server so any MCP-compatible AI client (Claude, Cursor, etc.) can prospect, enrich, update CRM records, and fire notifications from a single prompt. A workflow that normally spans five tools and manual context-switching becomes one instruction: find VP Sales targets, enrich them, create contacts in HubSpot, and notify the team in Slack.</p>
-          <p class="why"><span class="why-label">Why it matters:</span> Most AI agents can answer questions — very few can execute GTM workflows. This gives agents a shared execution layer across the systems revenue teams already run on.</p>
-          <p class="stack">Built with Node.js, MCP stdio transport, and modular tool files per integration (HubSpot, Clay, Apollo, Slack, email).</p>
+          <p class="why"><span class="why-label">Why it matters:</span> This gives agents a shared execution layer across the systems revenue teams already run on and allow it to execute GTM workflows.</p>
         </div>
 
         <div class="project">
-          <p><a href="https://github.com/dylanottinger/crm-reliability-engine">crm-reliability-engine</a> — A human-in-the-loop CRM governance layer for AI-extracted GTM data.</p>
-          <p>Instead of letting Gong, HubSpot, or transcript-derived signals blindly overwrite CRM fields, the system turns every suggested change into a confidence-scored mutation proposal. Operators can approve or reject changes in one click, and every decision is logged in an event-sourced audit trail.</p>
+          <p><a href="https://github.com/dylanottinger/crm-reliability-engine">crm-reliability-engine</a> - A human-in-the-loop CRM governance layer for AI-extracted GTM data.</p>
+          <p>Instead of letting Gong, HubSpot, or transcript-derived signals blindly overwrite CRM fields, the system turns every suggested change into a confidence-scored update proposal. Operators can approve or reject changes and every decision is logged in an event-sourced audit log.</p>
           <p class="why"><span class="why-label">Why it matters:</span> Solves the "garbage in, garbage out" problem in automated CRM syncing, preventing data drift without requiring hours of manual sales rep auditing.</p>
-          <p class="stack">Built with Next.js, SQLite, and an event-sourced audit log.</p>
         </div>
 
         <div class="project">
-          <p><a href="https://github.com/dylanottinger/revenue-ops-system">revenue-ops-system</a> — Real-time inbound lead routing infrastructure for GTM teams.</p>
-          <p>AI enrichment adds intent tags and urgency signals, but routing stays deterministic: territory rules, rep capacity, and weighted round-robin logic decide ownership. Failed routes go into an exceptions queue and can be replayed by an operator. Every lifecycle stage writes to an immutable event store.</p>
-          <p class="why"><span class="why-label">Why it matters:</span> Replaces fragile, black-box routing setups with an un-brickable, audit-logged infrastructure ensuring 100% lead compliance and zero dropped revenue.</p>
-          <p class="stack">Built with Next.js, SQLite, deterministic routing logic, and operator-facing observability.</p>
+          <p><a href="https://github.com/dylanottinger/revenue-ops-system">revenue-ops-system</a> - Real-time inbound lead routing infrastructure for GTM teams.</p>
+          <p>AI enrichment adds intent tags and urgency signals, but routing stays deterministic: territory rules, rep capacity, and weighted round-robin logic decide ownership. Failed routes go into an exceptions queue and can be replayed by an operator.</p>
+          <p class="why"><span class="why-label">Why it matters:</span> Replaces fragile, black-box routing setups with a audit-logged infrastructure ensuring lead compliance.</p>
         </div>
-
       </section>
 
       <section class="block" aria-labelledby="contact">
