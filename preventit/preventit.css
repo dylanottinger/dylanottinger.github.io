@@ -1,0 +1,173 @@
+.pv-page {
+  --pv-navy: #1b2e5c;
+  --pv-blue: #29abe2;
+}
+
+.pv-page a {
+  color: var(--pv-blue);
+}
+
+.pv-page h1,
+.pv-page h2 {
+  color: var(--pv-navy);
+}
+
+.pv-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pv-hero-copy {
+  flex: 1;
+}
+
+.pv-logo {
+  width: 220px;
+  max-width: 60%;
+  margin-bottom: 0.9rem;
+}
+
+.pv-lead {
+  font-size: 1.05em;
+}
+
+.pv-hero-img {
+  width: 280px;
+  max-width: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.pv-cta {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pv-cta:hover {
+  text-decoration: underline;
+}
+
+.pv-product-imgs {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.pv-product-imgs img {
+  width: 50%;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #f4f4f4;
+}
+
+.pv-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.pv-stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.pv-stat-num {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--pv-navy);
+}
+
+.pv-stats-compare .pv-stat {
+  border-left: 4px solid var(--pv-blue);
+  padding-left: 0.8rem;
+}
+
+.pv-stats-compare .pv-stat-muted {
+  border-left-color: #ccc;
+}
+
+.pv-stats-compare .pv-stat-muted .pv-stat-num {
+  color: #888;
+}
+
+.pv-stat-label {
+  font-size: 0.85em;
+  color: #444;
+}
+
+.pv-sources {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.pv-quote {
+  border-left: 4px solid var(--pv-blue);
+  margin: 1rem 0;
+  padding: 0.2rem 0 0.2rem 1rem;
+}
+
+.pv-quote p {
+  font-style: italic;
+}
+
+.pv-quote cite {
+  display: block;
+  margin-top: 0.4rem;
+  font-style: normal;
+  font-size: 0.88em;
+  color: #444;
+}
+
+.pv-quote-mission {
+  border-left-color: var(--pv-navy);
+}
+
+.pv-founder {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.pv-founder-img {
+  width: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .pv-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pv-hero-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pv-product-imgs {
+    flex-direction: column;
+  }
+
+  .pv-product-imgs img {
+    width: 100%;
+  }
+
+  .pv-stats {
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .pv-founder {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+}
